@@ -13,4 +13,10 @@ export class AppComponent {
   title = 'Module Champ d\'applications';
   resume = 'Prise en main d\'Angular, première application';
   estAuth = false;
+  constructor() {
+    setTimeout(() => {
+      this.estAuth = true;
+    }, 3000);
+  }
+
 }
