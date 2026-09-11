@@ -7,14 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './etudiant.component.css'
 })
 export class EtudiantComponent {
-  
+
   retNomEtu() {
-    return 'Bon';
+    return 'John';
   }
   retPrenomEtu() {
-    return 'Jean';
+    return 'Wick';
   }
 
-  nomEtu = 'John';
-  prenomEtu = 'Wick';
+  statusEtu = "absent"
 }
