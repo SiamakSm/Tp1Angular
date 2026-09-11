@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-etudiant',
@@ -8,12 +8,14 @@ import { Component } from '@angular/core';
 })
 export class EtudiantComponent {
 
+  @Input() nomEtu = 'BBB';
+  @Input() prenomEtu = 'JJJ';
+  @Input() statutEtu = "absent";
+
   retNomEtu() {
-    return 'John';
+    return this.nomEtu;
   }
   retPrenomEtu() {
-    return 'Wick';
+    return this.prenomEtu;
   }
-
-  statusEtu = "absent"
 }

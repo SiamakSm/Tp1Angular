@@ -18,5 +18,7 @@ export class AppComponent {
       this.estAuth = true;
     }, 3000);
   }
-
+  rendTousPres() {
+    console.log(' tous present ');
+  }
 }
