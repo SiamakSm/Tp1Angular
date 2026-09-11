@@ -1,10 +1,27 @@
-
 <main class="main mt-5">
+
   <div class="text-center">
     <h1>{{ title }}</h1>
     <h2>Séance TP 1</h2>
     <p class="bg-info text-dark text-success">{{ resume }}</p>
   </div>
-</main>
 
+  <p></p>
+
+  <div class="card-container text-center">
+    <div class="row">
+      <div class="col-xs-12 ">
+        <h2>Liste étudiants</h2>
+        <ul>
+          <app-etudiant></app-etudiant>
+          <app-etudiant></app-etudiant>
+          <app-etudiant></app-etudiant>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
 <router-outlet />

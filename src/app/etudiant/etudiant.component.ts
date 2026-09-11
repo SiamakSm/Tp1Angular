@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './etudiant.component.css'
 })
 export class EtudiantComponent {
-
+  nomEtu = 'John';
+  prenomEtu = 'Wick';
 }
