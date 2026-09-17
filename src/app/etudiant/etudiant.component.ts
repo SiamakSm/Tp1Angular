@@ -14,7 +14,7 @@ export class EtudiantComponent {
   @Input() statutEtu = "absent";
   @Input() commentaireSeance = "";
 
-
+  
   retNomEtu() {
     return this.nomEtu;
   }

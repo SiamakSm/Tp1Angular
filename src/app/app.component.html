@@ -13,9 +13,8 @@
       <div class="col-xs-12 ">
         <h2>Liste étudiants</h2>
         <ul>
-          <app-etudiant [nomEtu]="'Jean'" [prenomEtu]="'Dupont'" [statutEtu]="'absent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
-          <app-etudiant [nomEtu]="'Marie'" [prenomEtu]="'Martin'" [statutEtu]="'présent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
-          <app-etudiant [nomEtu]="'Paul'" [prenomEtu]="'Bernard'" [statutEtu]="'absent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
+          <app-etudiant *ngFor="let x of tableauEtu" [nomEtu]="x.nomEtu" [prenomEtu]="x.prenomEtu"
+            [statutEtu]="x.statutEtu" [commentaireSeance]="commentaireSeance"></app-etudiant>
         </ul>
         <button class="btn btn-success" [disabled]="!estAuth" (click)="rendTousPres()">Tous présents</button>
         <input type="text" class="form-control" [(ngModel)]="commentaireSeance" placeholder="Ecrivez un commentaire">
