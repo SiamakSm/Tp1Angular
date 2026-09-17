@@ -18,6 +18,8 @@
           <app-etudiant [nomEtu]="'Paul'" [prenomEtu]="'Bernard'" [statutEtu]="'présent'"></app-etudiant>
         </ul>
         <button class="btn btn-success" [disabled]="!estAuth" (click)="rendTousPres()">Tous présents</button>
+        <input type="text" class="form-control" [(ngModel)]="commentaireSeance" placeholder="Ecrivez un commentaire"> 
+        <p>Voilà votre commentaire : {{ commentaireSeance }}</p>
       </div>
     </div>
   </div>
