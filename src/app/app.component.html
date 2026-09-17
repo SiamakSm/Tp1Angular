@@ -13,12 +13,12 @@
       <div class="col-xs-12 ">
         <h2>Liste étudiants</h2>
         <ul>
-          <app-etudiant [nomEtu]="'Jean'" [prenomEtu]="'Dupont'" [statutEtu]="'présent'"></app-etudiant>
-          <app-etudiant [nomEtu]="'Marie'" [prenomEtu]="'Martin'" [statutEtu]="'absent'"></app-etudiant>
-          <app-etudiant [nomEtu]="'Paul'" [prenomEtu]="'Bernard'" [statutEtu]="'présent'"></app-etudiant>
+          <app-etudiant [nomEtu]="'Jean'" [prenomEtu]="'Dupont'" [statutEtu]="'présent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
+          <app-etudiant [nomEtu]="'Marie'" [prenomEtu]="'Martin'" [statutEtu]="'absent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
+          <app-etudiant [nomEtu]="'Paul'" [prenomEtu]="'Bernard'" [statutEtu]="'présent'" [commentaireSeance]="commentaireSeance"></app-etudiant>
         </ul>
         <button class="btn btn-success" [disabled]="!estAuth" (click)="rendTousPres()">Tous présents</button>
-        <input type="text" class="form-control" [(ngModel)]="commentaireSeance" placeholder="Ecrivez un commentaire"> 
+        <input type="text" class="form-control" [(ngModel)]="commentaireSeance" placeholder="Ecrivez un commentaire">
         <p>Voilà votre commentaire : {{ commentaireSeance }}</p>
       </div>
     </div>
