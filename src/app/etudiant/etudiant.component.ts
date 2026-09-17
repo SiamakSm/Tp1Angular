@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { NgIf , NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-etudiant',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './etudiant.component.html',
   styleUrl: './etudiant.component.css'
 })

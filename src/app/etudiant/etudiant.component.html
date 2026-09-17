@@ -1,3 +1,4 @@
 <li class="card card-small">
-    <p>{{ retNomEtu() }} {{ retPrenomEtu() }} -> Status : {{ statutEtu }} {{commentaireSeance}}</p>
+  <p>Nom: {{ retNomEtu() }} , Prenom: {{ retPrenomEtu() }} — Commentaires: {{ commentaireSeance }} — Statut: {{ statutEtu }}</p>
+  <div *ngIf="statutEtu=='absent'" style="width:20px; height:20px; background-color: red;"></div>
 </li>
