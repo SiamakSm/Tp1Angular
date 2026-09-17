@@ -30,43 +30,36 @@ export class AppComponent {
       nomEtu: 'Jean',
       prenomEtu: 'Dupont',
       statutEtu: "absent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Marie',
       prenomEtu: 'Martin',
       statutEtu: "présent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Paul',
       prenomEtu: 'Bernard',
       statutEtu: "absent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Marie',
       prenomEtu: 'Martin',
       statutEtu: "présent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Paul',
       prenomEtu: 'Bernard',
       statutEtu: "absent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Soroush',
       prenomEtu: 'Abdoli',
       statutEtu: "présent",
-      commentaireSeance: ""
     },
     {
       nomEtu: 'Ali',
       prenomEtu: 'Mousavian',
       statutEtu: "absent",
-      commentaireSeance: ""
     }
   ]
 
