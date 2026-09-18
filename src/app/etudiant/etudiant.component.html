@@ -1,4 +1,9 @@
-<li class="card card-small">
-  <p [ngStyle]="{'color': getColorEtu()}"> Nom: {{ retNomEtu() }} , Prenom: {{ retPrenomEtu() }} — Commentaires: {{commentaireSeance }} — Statut: {{ statutEtu }}</p>
+<li class="card card-small" [ngClass]="{
+  'list-group-item': true,
+  'list-group-item-success': statutEtu == 'présent',
+  'list-group-item-danger': statutEtu =='absent'}">
+  <div></div>
+  <h6 [ngStyle]="{'color': getColorEtu()}"> Nom: {{ retNomEtu() }} , Prenom: {{ retPrenomEtu() }} — Commentaires:
+    {{commentaireSeance }} — Statut: {{ statutEtu }}</h6>
   <div *ngIf="statutEtu=='absent'" style="width:20px; height:20px; background-color: red;"></div>
 </li>
