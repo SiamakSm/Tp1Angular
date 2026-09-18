@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { NgIf , NgFor } from '@angular/common';
+import { NgIf, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-etudiant',
-  imports: [NgIf],
+  imports: [NgIf, NgStyle],
   templateUrl: './etudiant.component.html',
   styleUrl: './etudiant.component.css'
 })
@@ -14,11 +14,15 @@ export class EtudiantComponent {
   @Input() statutEtu = "absent";
   @Input() commentaireSeance = "";
 
-  
+
   retNomEtu() {
     return this.nomEtu;
   }
   retPrenomEtu() {
     return this.prenomEtu;
+  }
+
+  getColorEtu() {
+    return this.statutEtu == 'absent' ? 'red' : 'green';
   }
 }
