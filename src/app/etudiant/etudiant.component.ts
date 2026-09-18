@@ -25,4 +25,10 @@ export class EtudiantComponent {
   getColorEtu() {
     return this.statutEtu == 'absent' ? 'red' : 'green';
   }
+  setAbsent() {
+    this.statutEtu = "absent";
+  }
+  setPresent() {
+    this.statutEtu = "présent";
+  }
 }

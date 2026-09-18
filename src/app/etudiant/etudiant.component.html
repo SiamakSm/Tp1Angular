@@ -6,4 +6,6 @@
   <h6 [ngStyle]="{'color': getColorEtu()}"> Nom: {{ retNomEtu() }} , Prenom: {{ retPrenomEtu() }} — Commentaires:
     {{commentaireSeance }} — Statut: {{ statutEtu }}</h6>
   <div *ngIf="statutEtu=='absent'" style="width:20px; height:20px; background-color: red;"></div>
-</li>
+  <button class="btn btn-danger" (click)="setAbsent()">absent</button>
+  <button class="btn btn-success" (click)="setPresent()">présent</button>
+</li> 
